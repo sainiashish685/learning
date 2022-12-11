@@ -1,0 +1,445 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <meta charset="utf-8">
+<title>Friends Bazaar - Liya Domestics & Cosmetics Private Limited</title>
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/revolution-slider.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<!--Favicon-->
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link href="css/responsive.css" rel="stylesheet">
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <div class="page-wrapper">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+ 	
+    <!-- Main Header / Header Type One-->
+    <header class="main-header header-type-one">
+    	<!--Header-Upper-->
+        <div class="header-upper">
+        	<div class="auto-container">
+            	<div class="clearfix">
+                	
+                	<div class="pull-left logo-outer">
+                    	<div class="logo"><a href="Default.aspx"><img src="images/logo.png" alt="" title=""></a></div>
+                    </div>
+                    
+                    <div class="nav-outer clearfix">
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->    	
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            
+                            <div class="navbar-collapse collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <li class="current dropdown"><a href="#">Home</a>
+                                        <ul>
+                                            <li><a href="Default.aspx">Home</a></li>
+                                          
+                                            <li class="dropdown"><a href="#">Header Styles</a>
+                                                <ul>
+                                                    <li><a href="Default.aspx">Header Style One</a></li>
+                                                    <li><a href="index-2.html">Header Style Two</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="about.html">About Us</a>
+                                    	<ul>
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="price.html">Pricing</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="#">Services</a>
+                                        <ul>
+                                            <li><a href="services.aspx">Services One</a></li>
+                                            <li><a href="services-two.html">Services Two</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="#">Project</a>
+                                        <ul>
+                                            <li><a href="project.html">Project Style One</a></li>
+                                            <li><a href="project-two.html">Project Style Two</a></li>
+                                            <li><a href="project-single.html">Project Single</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="#">Shop</a>
+                                        <ul>
+                                            <li><a href="shop.html">Our Shop</a></li>
+                                            <li><a href="shop-single.html">Single Item</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="#">Blog</a>
+                                        <ul>
+                                            <li><a href="blog.html">Our Blog</a></li>
+                                            <li><a href="blog-single.html">Blog Single</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+    
+                            </div>
+                        </nav>
+                        
+                        <!-- Main Menu End-->
+                        <div class="search-box-outer">
+                            <div class="dropdown">
+                                <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-search"></span></button>
+                                <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
+                                    <li class="panel-outer">
+                                        <div class="form-container">
+                                            <form method="post" action="blog.html">
+                                                <div class="form-group">
+                                                    <input type="search" name="field-name" value="" placeholder="Search Here" required="">
+                                                    <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!--Cart Btn-->
+                        <div class="cart-btn">
+                        	<a class="shop-icon" href="shop-single.html"><span class="fa fa-shopping-cart"></span><span class="total-count">0</span></a>
+                        </div>
+                        
+                	</div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+        
+        <!--Sticky Header-->
+        <div class="sticky-header">
+        	<div class="auto-container clearfix">
+            	<!--Logo-->
+            	<div class="logo pull-left">
+                	<a href="Default.aspx" class="img-responsive"><img src="images/logo-small.png" alt="" title=""></a>
+                </div>
+                
+                <!--Right Col-->
+                <div class="right-col pull-right">
+                	<!-- Main Menu -->
+                    <nav class="main-menu">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->    	
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        
+                        <div class="navbar-collapse collapse clearfix">
+                            <ul class="navigation clearfix">
+                                <li class="current dropdown"><a href="#">Home</a>
+                                    <ul>
+                                        <li><a href="Default.aspx">Homepage One</a></li>
+                                        <li><a href="index-2.html">Homepage Two</a></li>
+                                        <li class="dropdown"><a href="#">Header Styles</a>
+                                            <ul>
+                                                <li><a href="Default.aspx">Header Style One</a></li>
+                                                <li><a href="index-2.html">Header Style Two</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="about.html">About Us</a>
+                                    <ul>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="price.html">Pricing</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">Services</a>
+                                    <ul>
+                                        <li><a href="services.aspx">Services One</a></li>
+                                        <li><a href="services-two.html">Services Two</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">Project</a>
+                                    <ul>
+                                        <li><a href="project.html">Project Style One</a></li>
+                                        <li><a href="project-two.html">Project Style Two</a></li>
+                                        <li><a href="project-single.html">Project Single</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">Shop</a>
+                                    <ul>
+                                        <li><a href="shop.html">Our Shop</a></li>
+                                        <li><a href="shop-single.html">Single Item</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">Blog</a>
+                                    <ul>
+                                        <li><a href="blog.html">Our Blog</a></li>
+                                        <li><a href="blog-single.html">Blog Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+
+                        </div>
+                    </nav><!-- Main Menu End-->
+                </div>
+                
+            </div>
+        </div>
+        <!--End Sticky Header-->
+    
+    </header>
+    <!--End Main Header -->
+    
+	<!--Main Slider-->
+    <section class="main-slider" data-start-height="700" data-slide-overlay="yes">
+    	
+        <div class="tp-banner-container">
+            <div class="tp-banner">
+                <ul>
+                	
+                    <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/image-1.jpg"  data-saveperformance="off"  data-title="Awesome Title Here">
+                    <img src="images/main-slider/image-1.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"> 
+                    
+                    <div class="tp-caption sfl sfb tp-resizeme"
+                    data-x="left" data-hoffset="15"
+                    data-y="center" data-voffset="-30"
+                    data-speed="1500"
+                    data-start="0"
+                    data-easing="easeOutExpo"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.3"
+                    data-endspeed="1200"
+                    data-endeasing="Power4.easeIn"><h2> <br><br> Now make the  <br> most of your money</h2></div>
+                    
+                    <div class="tp-caption sfl sfb tp-resizeme"
+                    data-x="left" data-hoffset="15"
+                    data-y="center" data-voffset="120"
+                    data-speed="1500"
+                    data-start="500"
+                    data-easing="easeOutExpo"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.3"
+                    data-endspeed="1200"
+                    data-endeasing="Power4.easeIn"><div class="text">Great Product Quality</div></div>
+                    
+                  <!--  <div class="tp-caption sfl sfb tp-resizeme"
+                    data-x="left" data-hoffset="15"
+                    data-y="center" data-voffset="190"
+                    data-speed="1500"
+                    data-start="1000"
+                    data-easing="easeOutExpo"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.3"
+                    data-endspeed="1200"
+                    data-endeasing="Power4.easeIn"><a href="contact.html" class="theme-btn btn-style-one">See All Products</a> &ensp; &ensp; <a href="contact.html" class="theme-btn btn-style-two">Explore More</a></div>-->
+                    
+                    </li>
+                    
+                    <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/image-2.jpg"  data-saveperformance="off"  data-title="Awesome Title Here">
+                    <img src="images/main-slider/image-2.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"> 
+                    
+                    <div class="tp-caption sfl sfb tp-resizeme"
+                    data-x="left" data-hoffset="15"
+                    data-y="center" data-voffset="-30"
+                    data-speed="1500"
+                    data-start="0"
+                    data-easing="easeOutExpo"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.3"
+                    data-endspeed="1200"
+                    data-endeasing="Power4.easeIn"><h2>Visualize <br> Your Room Into <br> A Masterpiece!</h2></div>
+                    
+                    <div class="tp-caption sfl sfb tp-resizeme"
+                    data-x="left" data-hoffset="15"
+                    data-y="center" data-voffset="120"
+                    data-speed="1500"
+                    data-start="500"
+                    data-easing="easeOutExpo"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.3"
+                    data-endspeed="1200"
+                    data-endeasing="Power4.easeIn"><div class="text">Great Product Quality with Outstanding Design</div></div>
+                    
+                    <div class="tp-caption sfl sfb tp-resizeme"
+                    data-x="left" data-hoffset="15"
+                    data-y="center" data-voffset="190"
+                    data-speed="1500"
+                    data-start="1000"
+                    data-easing="easeOutExpo"
+                    data-splitin="none"
+                    data-splitout="none"
+                    data-elementdelay="0.01"
+                    data-endelementdelay="0.3"
+                    data-endspeed="1200"
+                    data-endeasing="Power4.easeIn"><a href="contact.html" class="theme-btn btn-style-one">See All Products</a> &ensp; &ensp; <a href="contact.html" class="theme-btn btn-style-two">Explore More</a></div>
+                    
+                    </li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+  	<!--End Main Slider-->
+    
+
+          <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    <!--Main Footer-->
+    <footer class="main-footer">
+    	
+        <div class="auto-container">
+            <div class="row clearfix">
+            
+                <!--big column-->
+                <div class="big-column col-md-6 col-sm-12 col-xs-12">
+                    <div class="row clearfix">
+                    
+                        <!--Footer Column-->
+                        <div class="footer-column col-md-7 col-sm-6 col-xs-12">
+                            <div class="footer-widget logo-widget">
+                                <div class="footer-logo"><figure><a href="Default.aspx"><img src="images/footer-logo.png" alt=""></a></figure></div>
+                                <div class="widget-content">
+                                    <div class="text">Floor & Decor is a leading specialty retailer in the hard surface flooring market, offering the broadest in-stock selection of tile,and flooring.</div>
+                                    <div class="emailed-form">
+                                        <form method="post" action="contact.html">
+                                            <div class="form-group">
+                                                <input type="email" name="email" value="" placeholder="Enter Your Email" required>
+                                                <button type="submit" class="theme-btn"><span class="fa fa-angle-right"></span></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--Footer Column-->
+                        <div class="footer-column col-md-5 col-sm-6 col-xs-12">
+                            <div class="footer-widget links-widget">
+                                <h2>Legal</h2>
+                                <div class="widget-content">
+                                    <ul class="list">
+                                        <li><a href="#">Manufacturers</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Terms & Condition</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                                                    
+                    </div>
+                </div>
+                
+                <!--big column-->
+                <div class="big-column col-md-6 col-sm-12 col-xs-12">
+                    <div class="row clearfix">
+                        
+                        <!--Footer Column-->
+                        <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                            <div class="footer-widget links-widget">
+                                <h2>Information</h2>
+                                <div class="widget-content">
+                                    <ul class="list">
+                                        <li><a href="#">About us</a></li>
+                                        <li><a href="#">Customer</a></li>
+                                        <li><a href="#">Service</a></li>
+                                        <li><a href="#">Collection</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">BestSellers</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--Footer Column-->
+                        <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                            <div class="footer-widget info-widget">
+                                <h2>Our address</h2>
+                                <div class="widget-content">
+                                    <ul class="list-style-one">
+                                        <li>Phone: <span> +880 1723801729</span></li>
+                                        <li>Fax: <span> +1 496 457 654</span></li>
+                                        <li>Email: <span>carpetinc@gmail.com</span></li>
+                                        <li>Address: <span>Uttara Sec-7, Dhaka 1207</span></li>
+                                    </ul>
+                                    <ul class="social-icon-one">
+                                        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!--Footer Bottom-->
+        <div class="footer-bottom">
+        	<div class="copyright">&copy; 2017 <a href="Default.aspx">Carpet Inc.</a> All Rights Reserved. </div>
+        </div>
+        
+    </footer>
+	<!--End Footer-->
+    
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target=".main-header"><span class="icon fa fa-long-arrow-up"></span></div>
+
+<script src="js/jquery.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+<script src="js/revolution.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.fancybox-media.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/script.js"></script>
+  
+    </div>
+    </form>
+</body>
+</html>
